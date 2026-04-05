@@ -815,31 +815,40 @@
     <div class="hero-bg"></div>
     <div class="hero-glitch"></div>
 
-    <!-- LOGO as hero centerpiece -->
+    <!-- Logo as full background -->
     <div style="
       position: absolute;
       inset: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       z-index: 1;
     ">
       <img
         src="logo_new.png"
-        alt="Video Luz y Sonido Twins"
+        alt=""
         style="
           width: 100%;
-          max-width: 900px;
-          object-fit: contain;
-          opacity: 0.95;
-          mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
-          -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+          height: 100%;
+          object-fit: cover;
+          object-position: center 30%;
+          opacity: 0.25;
+          mask-image:
+            linear-gradient(to bottom, transparent 0%, black 25%, black 60%, transparent 100%),
+            linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%);
+          -webkit-mask-image:
+            linear-gradient(to bottom, transparent 0%, black 25%, black 60%, transparent 100%),
+            linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%);
+          mask-composite: intersect;
+          -webkit-mask-composite: destination-in;
         "
       />
     </div>
 
     <div class="hero-content">
       <p class="hero-eyebrow">Cotija, Michoacan</p>
+      <h1 class="hero-title">
+        <span class="accent">Video,</span> Luz<br />y Sonido<br />
+        <span class="accent2">Twins</span>
+      </h1>
+      <p class="hero-sub">Eduardo y Armando Medina</p>
       <div class="hero-tags">
         <span class="hero-tag">DJ</span>
         <span class="hero-tag">Video</span>
